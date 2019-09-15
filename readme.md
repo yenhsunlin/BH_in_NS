@@ -1,7 +1,7 @@
 In preparation
 
-Compiling languages:
+Compiling languages (plz specify the legal licence if commercial software is used):
 
-- Mathematica
+- Mathematica (v12.0, ASIoP-HEP Group network licence)
 - cpp ???
 - python ???
