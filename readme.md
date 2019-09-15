@@ -1,4 +1,4 @@
-In preparation
+In preparation...
 
 Compiling languages (plz specify the legal licence if commercial software is used):
 
