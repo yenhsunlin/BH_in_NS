@@ -1,0 +1,167 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5477,        157]
+NotebookOptionsPosition[      4877,        140]
+NotebookOutlinePosition[      5240,        156]
+CellTagsIndexPosition[      5197,        153]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dbPath", "=", 
+   RowBox[{"NotebookDirectory", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"AppendTo", "[", 
+   RowBox[{"$Path", ",", 
+    RowBox[{"dbPath", "<>", "\"\<libs\>\""}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "NSBH`"}]}], "Input",
+ CellChangeTimes->{{3.782604973841406*^9, 
+  3.782604977530985*^9}},ExpressionUUID->"660cb485-8fb3-4e84-a6cd-\
+bf378c3cb0ca"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Testing", " ", "the", " ", "nearby", " ", "NS", " ", "could", " ", "be", 
+    " ", "consumed", " ", "by", " ", "DM", " ", "or", " ", "not"}], " ", 
+   "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[Alpha]", "=", "0.01"}], 
+    RowBox[{"(*", " ", 
+     RowBox[{"dark", " ", "fine", " ", "structure", " ", "constant"}], " ", 
+     "*)"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"mx", "=", "5"}], 
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{"DM", " ", "mass"}], ",", " ", "GeV"}], " ", "*)"}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"mphi", "=", "10"}], " ", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{"mediator", " ", "mass"}], ",", " ", "MeV"}], " ", "*)"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"sigxn", "=", 
+     RowBox[{"10", "^", 
+      RowBox[{"(", 
+       RowBox[{"-", "45"}], ")"}]}]}], 
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{"DM", "-", 
+       RowBox[{"nucleon", " ", "crox"}]}], ",", " ", 
+      SuperscriptBox["cm", 
+       RowBox[{"-", "2"}]]}], " ", "*)"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"NSage", "=", 
+     RowBox[{"3", "*", 
+      RowBox[{"10", "^", "17"}]}]}], 
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{"NS", " ", "age"}], ",", " ", "seconds"}], " ", "*)"}], 
+    ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.782604981458856*^9, 3.7826052463755293`*^9}, {
+  3.78260538294742*^9, 
+  3.7826053830822268`*^9}},ExpressionUUID->"224ffbb8-7818-424c-9031-\
+7759c460a377"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "Checking", " ", "NS", " ", "is", " ", "consumed", " ", "or", " ", 
+     "not"}], ",", " ", 
+    RowBox[{"no", " ", "decay", " ", "case"}]}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"StarConsumed", "[", 
+   RowBox[{"mx", ",", "\[IndentingNewLine]", 
+    RowBox[{"(*", " ", 
+     RowBox[{"Calculating", " ", "the", " ", "DM", " ", "number", " ", 
+      SubscriptBox["N", "\[Chi]"], " ", "in", " ", "the", " ", "NS"}], " ", 
+     "*)"}], "\[IndentingNewLine]", 
+    RowBox[{"NxNoDecay", "[", 
+     RowBox[{"NSage", ",", "mx", ",", "sigxn"}], "]"}], ",", 
+    "\[IndentingNewLine]", "mphi", ",", "\[IndentingNewLine]", "\[Alpha]", 
+    ",", "\[IndentingNewLine]", 
+    RowBox[{"ShowMessage", "\[Rule]", "True"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.782605165881432*^9, 3.782605173137947*^9}, {
+  3.782605223796957*^9, 3.782605240536582*^9}, {3.782605273545041*^9, 
+  3.782605321639043*^9}, {3.782605377524684*^9, 
+  3.782605386502942*^9}},ExpressionUUID->"dd06d785-8984-4667-bc52-\
+1f056d7430ab"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "Checking", " ", "NS", " ", "is", " ", "consumed", " ", "or", " ", 
+     "not"}], ",", " ", 
+    RowBox[{"decay", " ", "case"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"DMlife", "=", 
+     RowBox[{"10", "^", "17"}]}], 
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{"DM", " ", "lifetime"}], ",", " ", "seconds"}], " ", "*)"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{"StarConsumed", "[", 
+    RowBox[{"mx", ",", "\[IndentingNewLine]", 
+     RowBox[{"(*", " ", 
+      RowBox[{"Calculating", " ", "the", " ", "DM", " ", "number", " ", 
+       SubscriptBox["N", "\[Chi]"], " ", "in", " ", "the", " ", "NS"}], " ", 
+      "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"NxDecay", "[", 
+      RowBox[{"age", ",", "DMlife", ",", "mx", ",", "sigxn"}], "]"}], ",", 
+     "\[IndentingNewLine]", "mphi", ",", "\[IndentingNewLine]", "\[Alpha]", 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"ShowMessage", "\[Rule]", "True"}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.7826053289409122`*^9, 
+  3.782605399249404*^9}},ExpressionUUID->"06222ef6-479e-453c-830f-\
+1fd7bbd9c04f"]
+},
+WindowSize->{808, 911},
+WindowMargins->{{Automatic, 479}, {-105, Automatic}},
+FrontEndVersion->"12.0 \:95dc\:65bc  Mac OS X x86 (64-bit) \
+(2019\:5e744\:67088\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 443, 12, 81, "Input",ExpressionUUID->"660cb485-8fb3-4e84-a6cd-bf378c3cb0ca"],
+Cell[1004, 34, 1590, 47, 150, "Input",ExpressionUUID->"224ffbb8-7818-424c-9031-7759c460a377"],
+Cell[2597, 83, 1085, 24, 174, "Input",ExpressionUUID->"dd06d785-8984-4667-bc52-1f056d7430ab"],
+Cell[3685, 109, 1188, 29, 197, "Input",ExpressionUUID->"06222ef6-479e-453c-830f-1fd7bbd9c04f"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
