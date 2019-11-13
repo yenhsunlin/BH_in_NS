@@ -1,7 +1,1 @@
-In preparation...
-
-Compiling languages (plz specify the legal licence if commercial software is used):
-
-- Mathematica (v12.0, ASIoP-HEP Group network licence)
-- cpp ???
-- python ???
+This repository contains the Mathematica scripts (.m) that can determine an old nearby neutron star could be destroyed by the dark-matter-forming black hole inside it or not. See `tutorial.nb` for quick usage.
