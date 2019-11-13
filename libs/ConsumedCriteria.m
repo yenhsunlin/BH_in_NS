@@ -15,21 +15,13 @@ ShowMessage::usage = "Option, Track the star will be consumed or halted at which
 Defalut is False";
 StarConsumed::usage = "Return a boolean value for the star will be consumed or not. \
 True for yes, False for not.";
-(*CheckDPS::usage = "Subroutine for StarConsumed when the DM is in degenerate partly \
-screened, DPS, phase initially.";
-CheckDSS::usage = "Subroutine for StarConsumed when the DM is in degenerate strongly \
-screened, DSS, phase initially.";
-CheckNSS::usage = "Subroutine for StarConsumed when the DM is neither in DPS nor DSS \
-phases initially. It should be in nondegenerate strongly screened, NSS, phase.";*)
-
 
 Begin["`Private`"]
-
 
 (* --- Subroutine: DPS --- *)
 (*Can it collapse from degenerate and partly screened phase?*)
 (*Mx and Mphi are in GeV*)
-CheckDPS[Mx_, Nx_, Mphi_, Alpha_, ShowMsg_: FlagMsg] :=
+CheckDPS[Mx_, Nx_, Mphi_, Alpha_, ShowMsg_] :=
  Module[{mx = Mx, nx = Nx, mphi = Mphi, a = Alpha, msg = ShowMsg, Ncolldps},
   Ncolldps = (1.1*10^61) (a^-6) (mphi^12) (mx)^-9;
   If[
@@ -73,8 +65,7 @@ dn = 0.05;
 LookupNcoll = Table[n, {n, 30, 45, dn}];
 MaxIt = Length[LookupNcoll];
 
-CheckDSS[Mx_, Nx_, Mphi_, Alpha_, ShowMsg_: FlagMsg, 
-  Lookup_: LookupNcoll, Maxit_: MaxIt] :=
+CheckDSS[Mx_, Nx_, Mphi_, Alpha_, ShowMsg_, Lookup_: LookupNcoll, Maxit_: MaxIt] :=
   Module[{mx = Mx, nx = Nx, mphi = Mphi, a = Alpha, msg = ShowMsg, 
    lookupNcoll = Lookup, maxit = Maxit, j = 0, Ncolldss = 0, ncollexp,
    yDiscriminate, y},
@@ -135,11 +126,8 @@ CheckNSS[Mx_, Nx_, Mphi_, Alpha_, ShowMsg_] :=
  Module[{mx = Mx, nx = Nx, mphi = Mphi, a = Alpha, msg = ShowMsg, 
    ncollseed = 30, ncollsol, Ncollnss, ncollexp},
   (*ncollseed=Log10[nx];*)
-  
   ncollsol = 
-   FindRoot[
-    Log10[VirialNSS[mx, 10^ncollexp, mphi, a]] == 
-     Log10[3*NSTemp*K2GeV], {ncollexp, ncollseed}];
+   FindRoot[Log10[VirialNSS[mx, 10^ncollexp, mphi, a]] == Log10[3*NSTemp*K2GeV], {ncollexp, ncollseed}];
   Ncollnss = 10^ncollexp /. ncollsol;
   (*Following checks the collapse can happen or not?*)
   If[
@@ -198,17 +186,17 @@ CheckNSS[Mx_, Nx_, Mphi_, Alpha_, ShowMsg_] :=
       "Scenario (h)"}]
     ]
    ]
-  ]
+  ];
+
+
 (* --- Main routine: StarConsumed ---*)
 (* Default option value *)
 Options[StarConsumed] = {ShowMessage -> False};
 
 (*Mx is in GeV and Mphi in MeV*)
-StarConsumed[Mx_ /; NumericQ[Mx], Nx_ /; NumericQ[Nx], 
-  Mphi_ /; NumericQ[Mphi], Alpha_ /; NumericQ[Alpha], 
-  OptionsPattern[]] :=
- Module[{mx = Mx, nx = Nx, mphi = Mphi/1000, a = Alpha,
-   msg = OptionValue[ShowMessage]},
+StarConsumed[Mx_ /; NumericQ[Mx], Nx_ /; NumericQ[Nx], Mphi_ /; NumericQ[Mphi],
+ Alpha_ /; NumericQ[Alpha], OptionsPattern[]] :=
+ Module[{mx = Mx, nx = Nx, mphi = Mphi/1000, a = Alpha, msg = OptionValue[ShowMessage]},
   If[
    (*Can collapse relativistically?*)
    a > 4.7*(mphi/mx)^2,
@@ -218,7 +206,6 @@ StarConsumed[Mx_ /; NumericQ[Mx], Nx_ /; NumericQ[Nx],
     (* True, call CheckDSS *)
     CheckDSS[mx, nx, mphi, a, msg],
     (* False, partly screened, call CheckDPS*)
-    
     CheckDPS[mx, nx, mphi, a, msg]
     ],
    (*Unable to collapse relativistically*)
@@ -229,8 +216,8 @@ StarConsumed[Mx_ /; NumericQ[Mx], Nx_ /; NumericQ[Nx],
    ]
   ];
 
-Protect[ShowMessage, StarConsumed];
 
+Protect[ShowMessage, StarConsumed];
 
 End[]
 
