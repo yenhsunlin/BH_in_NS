@@ -25,7 +25,7 @@ and the package should be loaded on-the-fly. If the package cannot be found, ple
 then load the package again.
 
 ### Build-in functions
-The dark matter (DM) capture rate and how many DM are captured after a peried can be calculated through `caprate` and `numx`.
+The dark matter (DM) capture rate and how many DM are captured after a period can be calculated through `caprate` and `numx`.
 
 To determine an old neutron star is destroyed by a DM-forming black hole is given by `star_consumed`. Detail usage please check `tutorial.ipynb`. The meaning of the return value by `star_consumed` is explained by `decision_tree.pdf` in the `doc` folder.
 
