@@ -1,8 +1,7 @@
 # Introduction
-This repository contains the Mathematica scripts (.m files) that can determine an old nearby neutron star could be destroyed by the dark-matter-forming black hole inside it or not. See `tutorial.nb` for quick usage.
+This repository contains python package `nsbh` for determining an old nearby neutron star could be destroyed by the dark-matter-forming black hole inside it or not. See jupyter notebook `tutorial.ipynb` for quick usage. The method is based on J. Bramante *et al.*, Phys. Rev. D **89**, 015010 (2014) [arXiv:1310.3509 [hep-ph]]
 
-The method is based on J. Bramante *et al.*, Phys. Rev. D **89**, 015010 (2014) [arXiv:1310.3509 [hep-ph]]
-
+# Quick usage
 The reproduction of the exclusion plots of the upper and middle panels of Fig. 1 in C. Kouvaris, Phys. Rev. Lett. **108**, 191301 (2012) are given in the *results* folder. Including <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\large&space;\alpha=10^{-2}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\large&space;\alpha=10^{-2}" title="\large \alpha=10^{-2}" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\large&space;10^{-5}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\large&space;10^{-5}" title="\large 10^{-5}" /></a>. Beige color is excluded due to the star is consumed by the black hole.
 
 Numerical data are given as well, arranged in <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\large&space;(m_\chi,m_\phi,{\rm&space;1/0})" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\large&space;(m_\chi,m_\phi,{\rm&space;1/0})" title="\large (m_\chi,m_\phi,{\rm 1/0})" /></a>. `1` means excluded (star consumed) and `0` allowed (not consumed).
