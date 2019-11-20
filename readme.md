@@ -6,7 +6,9 @@ This repository contains qcpython package `nsbh` for determining an old nearby n
 The core files are contained in the folder named `nsbh`, please put your jupyter notebook or python script together with `nsbh` folder in the same path.
 
 Using jupyter notebook for instance, typing the following in the work cell:<br>
-``from nsbh import *``<br>
+
+    from nsbh import *
+
 and the package should be loaded on-the-fly.
 
 
