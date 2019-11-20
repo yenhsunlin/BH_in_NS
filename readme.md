@@ -11,13 +11,13 @@ This repository contains a python package `nsbh` for determining an old nearby n
 Missing any of them will result in error.
 
 ### Import the package
-The core files are contained in the folder named `nsbh`, please put your jupyter notebook or python script together with `nsbh` folder in the same path.
+The core files are contained in the folder named `nsbh`, please put your jupyter notebook or python script together with `nsbh` folder under the same path.
 
 Using jupyter notebook for instance, typing the following in the work cell:<br>
 
     from nsbh import *
 
-and the package should be loaded on-the-fly. If the package cannot be found, please add the following the preamble
+and the package should be loaded on-the-fly. If the package cannot be found, please add the following in the preamble
 
     import sys
     sys.path.append('./')
