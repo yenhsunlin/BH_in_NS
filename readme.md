@@ -5,8 +5,8 @@ This repository contains a python package `nsbh` for determining an old nearby n
 ### Prerequistes
 `nsbh` requires the following packages to be installed in advance:
 
-- numpy
-- scipy
+- `numpy`
+- `scipy`
 
 Missing any of them will result in error.
 
