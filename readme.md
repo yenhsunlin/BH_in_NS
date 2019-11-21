@@ -33,7 +33,7 @@ To determine an old neutron star is destroyed by a DM-forming black hole is give
 `nsbh` also provides a Mathematica-dub, see `mathematica-dub` folder. However, it will not subject to update and will be deprecated soon.
 
 ## IMPORTANT NOTES!
-If you use any of the code, even snippets, in this repository for academic research and publishing scientific article, please DO cite this article
+If you use any of the code, even snippets, in this repository for academic research and publishing scientific article, please DO cite this article (BibTeX)
 
     @article{Chen:2018ohx,
         author         = "Chen, Chian-Shu and Lin, Yen-Hsun",
@@ -50,7 +50,7 @@ If you use any of the code, even snippets, in this repository for academic resea
         SLACcitation   = "%%CITATION = ARXIV:1804.03409;%%"
     }
  
- as well as the address of this repository
+as well as the address of this repository
  
     https://github.com/yenhsunlin/NSBH/
     
