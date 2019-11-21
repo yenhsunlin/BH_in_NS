@@ -16,7 +16,7 @@ class CriticalNumber:
     @staticmethod
     def dss(mx,nx,mphi,a):
         """
-        Finding the critical number for collapse in DSS phase
+        Finding the critical y that will induce DM collapse in the DSS phase
         """
         
         def virial_dss(y):
@@ -50,7 +50,7 @@ class CriticalNumber:
     @staticmethod
     def nss(mx,mphi,a):
         """
-        Finding the critical number for collapse in NSS phase
+        Finding the critical number for collapse in the NSS phase
         """
         # Eq. (13) of ref, thermal radius
         R_th = lambda mx: 250*Const.cm2GeV/np.sqrt(mx)
