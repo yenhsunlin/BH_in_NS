@@ -1,6 +1,30 @@
 ## Introduction
 This repository contains a python package `nsbh` for determining an old nearby neutron star could be destroyed by the dark-matter-forming black hole inside it or not. See jupyter notebook `tutorial.ipynb` for quick usage. The method is based on J. Bramante *et al.*, Phys. Rev. D **89**, 015010 (2014) [arXiv:1310.3509 [hep-ph]]
 
+### IMPORTANT NOTES!
+If you use any of the code, even snippets, in this repository for academic research and publishing scientific article, please DO cite this article
+
+    @article{Chen:2018ohx,
+        author         = "Chen, Chian-Shu and Lin, Yen-Hsun",
+        title          = "{Reheating neutron stars with the annihilation of
+                            self-interacting dark matter}",
+        journal        = "JHEP",
+        volume         = "08",
+        year           = "2018",
+        pages          = "069",
+        doi            = "10.1007/JHEP08(2018)069",
+        eprint         = "1804.03409",
+        archivePrefix  = "arXiv",
+        primaryClass   = "hep-ph",
+        SLACcitation   = "%%CITATION = ARXIV:1804.03409;%%"
+    }
+ 
+ as well as the address of this repository
+ 
+    https://github.com/yenhsunlin/NSBH/
+    
+ Thanks!
+
 ## Quick guide
 ### Prerequistes
 `nsbh` requires the following packages to be installed in advance:
