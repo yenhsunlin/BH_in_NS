@@ -13,7 +13,7 @@ Missing any of them will result in error.
 ### Import the package
 The core files are contained in the folder named `nsbh`, please put your jupyter notebook or python script together with `nsbh` folder under the same path.
 
-Using jupyter notebook for instance, typing the following in the work cell:<br>
+Using jupyter notebook for instance, typing the following in the work space:
 
     from nsbh import *
 
