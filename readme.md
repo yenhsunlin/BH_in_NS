@@ -52,7 +52,7 @@ If you use any of the code, even snippets, in this repository for academic resea
  
 as well as the address of this repository
  
-    https://github.com/yenhsunlin/NSBH/
+    https://github.com/yenhsunlin/nsbh/
     
  Thanks!
 
