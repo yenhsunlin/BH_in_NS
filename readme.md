@@ -34,7 +34,7 @@ To determine an old neutron star is destroyed by a DM-forming black hole is give
 
 ## Known issues
 
-### `ValueError: Integers to negative integer powers are not allowed`
+### Input variable type
 All input variables should be python native `int` or `float` types instead of `numpy.int`, `numpy.float` or something...etc. Using `type` to check the variable type and `float(`*var*`)` or `int(`*var*`)` to convert *var* to the python native types.
 
 ### `root_scalar` error
