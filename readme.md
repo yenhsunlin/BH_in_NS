@@ -32,6 +32,15 @@ To determine an old neutron star is destroyed by a DM-forming black hole is give
 ### Mathematica-dub
 `nsbh` also provides a Mathematica-dub, see `mathematica-dub` folder. However, it will not subject to update and will be deprecated soon.
 
+## Known issues
+
+Certain range of inputs will cause the function `star_consumed` crashing due to the values are not allowed by 'root_scalar' in `scipy.optimize`. Please simply ignore such inputs. If you are using loop calcuation, a way out to avoid kernel breaking due to `ValueError` can be done by
+
+    try:
+        star_consumed(*inputs*)
+    except ValueError:
+        pass
+
 ## IMPORTANT NOTES!
 If you use any of the code, even snippets, in this repository for academic researches or publishing scientific articles, please ***DO*** cite the following (BibTeX)
 
