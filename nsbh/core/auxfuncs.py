@@ -16,7 +16,7 @@ class CriticalNumber:
     @staticmethod
     def dss(mx,nx,mphi,a):
         """
-        Finding the critical y that will induce DM collapse in the DSS phase
+        Finding the critical number for collapse in DSS phase
         """
         
         def virial_dss(y):
@@ -50,7 +50,7 @@ class CriticalNumber:
     @staticmethod
     def nss(mx,mphi,a):
         """
-        Finding the critical number for collapse in the NSS phase
+        Finding the critical number for collapse in NSS phase
         """
         # Eq. (13) of ref, thermal radius
         R_th = lambda mx: 250*Const.cm2GeV/np.sqrt(mx)
@@ -130,13 +130,13 @@ class PhaseCheck:
             if y_sol.root < 1 or y_sol.converged == False:
                 # determining Ncoll
                 Ncolldss = 10**nexp
-                j = 'ncoll_found'
+                flag = 'ncoll_found'
                 break
             else:
                 pass
         
         # Decision tree determines the fate of NS in NSS phase
-        if j == 'ncoll_not_found' or nx < Ncolldss:
+        if flag == 'ncoll_not_found' or nx < Ncolldss:
             return False,'Scenario (b)'
         else:
             # Checking if DM is in degenerate state
