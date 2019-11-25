@@ -1,7 +1,7 @@
-## Introduction
+## 1 Introduction
 This repository contains a python package `nsbh` for determining whether an old nearby neutron star could be destroyed by the dark-matter-forming black hole inside it or not. See jupyter notebook `tutorial.ipynb` for quick usage. The method is based on J. Bramante *et al.*, *Phys. Rev. D* **89**, 015010 (2014) [arXiv:1310.3509 [hep-ph]]
 
-## Quick guide
+## 2 Quick guide
 ### Prerequistes
 `nsbh` requires the following packages to be installed in advance:
 
@@ -32,7 +32,7 @@ To determine an old neutron star is destroyed by a DM-forming black hole is give
 ### Mathematica-dub
 `nsbh` also provides a Mathematica-dub, see `mathematica-dub` folder. However, it will not subject to update and will be deprecated soon.
 
-## Known issues
+## 3 Known issues
 
 ### Input variable type
 All input variables should be python native `int` or `float` types instead of `numpy.int`, `numpy.float` or something...etc. Using `type` to check the variable type and `float(`*var*`)` or `int(`*var*`)` to convert *var* to the python native types.
@@ -45,7 +45,7 @@ Certain range of inputs will cause the function `star_consumed` crashing due to 
     except ValueError:
         pass
 
-## IMPORTANT NOTES!
+## 4 IMPORTANT NOTES!
 If you use any of the code, even snippets, in this repository for academic researches or publishing scientific articles, please ***DO*** cite the following (BibTeX)
 
     @article{Chen:2018ohx,
