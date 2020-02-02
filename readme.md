@@ -35,7 +35,7 @@ To determine an old neutron star is destroyed by a DM-forming black hole is give
 ## 3 Known issues
 
 ### Input variable type
-If incompatible `numpy.int` or `numpy.float` happens during the calculations, try convert these `numpy` type of variables into native python `float` or `int` type using `float(*var*)` or `int(*var*)`.
+If incompatible `numpy.int` or `numpy.float` happens during the calculations, try convert these `numpy` type of variables into native python `float` or `int` using `float(*var*)` or `int(*var*)`.
 
 ### `root_scalar` error
 Certain range of inputs will cause the function `star_consumed` crashing due to the values are not allowed by `root_scalar` in `scipy.optimize`. Please simply ignore such inputs. If you are using loop calcuation, a way out to avoid kernel breaking due to `ValueError` can be done by
