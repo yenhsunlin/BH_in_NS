@@ -1,5 +1,12 @@
-#from .const import Const
-#from .capture import (caprate_no,caprate,numx)
-#from .criteria import star_consumed
+"""
+NSBH - Neutron Star consumed by Black Hole
 
-#__all__ = ['Const','caprate_no','caprate','numx','star_consumed']
+A python package calculating the fate of an old neutron star in the
+presence of dark matter being captured inside it.
+
+"""
+from .const import Const
+from .capture import (caprate_no,caprate,numx)
+from .criteria import star_consumed
+
+__all__ = ['Const','caprate_no','caprate','numx','star_consumed']
