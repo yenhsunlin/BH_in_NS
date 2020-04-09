@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from nsbh import *
+from dm2nsbh import *
 
 # Basic properties of DM
 age = 3e17     # NS age
