@@ -6,8 +6,8 @@ presence of dark matter being captured inside it.
 
 """
 
-from nsbh.core.const import Const
-from nsbh.core.capture import (caprate_no,caprate,numx)
-from nsbh.core.criteria import star_consumed
+from dm2nsbh.core.const import Const
+from dm2nsbh.core.capture import (caprate_no,caprate,numx)
+from dm2nsbh.core.criteria import star_consumed
 
 __all__ = ['Const','caprate_no','caprate','numx','star_consumed']
