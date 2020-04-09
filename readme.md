@@ -15,7 +15,7 @@ The core files are contained in the folder named `nsbh`, please put your jupyter
 
 Using jupyter notebook for instance, typing the following in the work space:
 
-    from nsbh import *
+    from dm2nsbh import *
 
 and the package should be loaded on-the-fly. If the package cannot be found, please add the following in the preamble
 
