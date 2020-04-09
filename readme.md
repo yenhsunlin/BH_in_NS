@@ -1,9 +1,9 @@
 ## 1 Introduction
-This repository contains a python package `dm-nsbh` for determining whether an old nearby neutron star could be destroyed by the dark-matter-forming black hole inside it or not. See jupyter notebook `tutorial.ipynb` or `tutorial.py` for quick usage. The method is based on J. Bramante *et al.*, *Phys. Rev. D* **89**, 015010 (2014) [arXiv:1310.3509 [hep-ph]]
+This repository contains a python package `dm2nsbh` for determining whether an old nearby neutron star could be destroyed by the dark-matter-forming black hole inside it or not. See jupyter notebook `tutorial.ipynb` or `tutorial.py` for quick usage. The method is based on J. Bramante *et al.*, *Phys. Rev. D* **89**, 015010 (2014) [arXiv:1310.3509 [hep-ph]]
 
 ## 2 Quick guide
 ### Prerequistes
-`dm-nsbh` requires the following packages to be installed in advance:
+`dm2nsbh` requires the following packages to be installed in advance:
 
 - `numpy`
 - `scipy`
