@@ -11,7 +11,7 @@ This repository contains a python package `dm2nsbh` for determining whether an o
 Missing any of them will result in error.
 
 ### Import the package
-The core files are contained in the folder named `nsbh`, please put your jupyter notebook or python script together with `nsbh` folder under the same path.
+The core files are contained in the folder named `dm2nsbh`, please put your jupyter notebook or python script together with `dm2nsbh` folder under the same path.
 
 Using jupyter notebook for instance, typing the following in the work space:
 
