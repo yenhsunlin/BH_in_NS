@@ -49,7 +49,7 @@ Certain range of inputs will cause the function `star_consumed` crashing due to 
     except ValueError:
         pass
 
-The other is to change the method. It is coded in `auxfuncs.py`. Searching the class named `CriticalNumber` and there are two functions with python dectorator `@staticmethod`. In the function `dss` I pick up Newtonian method and bisect method in `nss`. Feel free to change the method, it could help you avoid the unbound problem when doing the calculation.
+The other is to change the method. It is coded in `auxfuncs.py`. Searching the class named `CriticalNumber` and there are two functions with python dectorator `@staticmethod`. In the function `dss` I pick up Newtonian method and bisect method in `nss`. Feel free to change the method, it could help you avoiding the unbound problem while doing the calculation.
 
 To know the meaning of these methods I recommend *Algorithms for Optimization* by Kochenderfer and Wheeler, MIT Press, 2019 as well as the scipy reference guide on the `root_scalar` page.
 
