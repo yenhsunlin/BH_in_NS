@@ -42,7 +42,7 @@ To determine an old neutron star is destroyed by a DM-forming black hole is give
 If incompatible `numpy.int` or `numpy.float` happens during the calculations, try convert these `numpy` type of variables into native python `float` or `int` using `float(*var*)` or `int(*var*)`.
 
 ### `root_scalar` error
-Certain range of inputs will cause the function `star_consumed` crashing due to the values are unbound by certain root-finding method specified in the `root_scalar` function. Two way to solve this, one is to ignore the parameters that causes this problem via
+Certain range of inputs will cause the function `star_consumed` crashing due to the values are unbound by certain root-finding method specified in the `root_scalar` function. Two way to solve this, one is to ignore the parameters that causes the crashing via
 
     try:
         star_consumed(*inputs*)
