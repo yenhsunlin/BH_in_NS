@@ -1,5 +1,5 @@
 ## 1 Introduction
-This repository contains a python package `dm2nsbh` for determining whether an old nearby neutron star could be destroyed by the dark-matter-forming black hole inside it or not. See jupyter notebook `tutorial.ipynb` or `tutorial.py` for quick usage. The method is based on J. Bramante *et al.*, *Phys. Rev. D* **89**, 015010 (2014) [arXiv:1310.3509 [hep-ph]]
+This repository contains a python package `dm2nsbh` for determining whether an old nearby neutron star could be destroyed by the dark-matter-forming black hole inside it or not. See jupyter notebook `tutorial.ipynb` or `tutorial.py` for quick usage. The method is based on G.L. Lin and Y.H. Lin [arXiv:2004.05312 [hep-ph]] (2020) and J. Bramante *et al.*, *Phys. Rev. D* **89**, 015010 (2014) [arXiv:1310.3509 [hep-ph]]
 
 ## 2 Quick guide
 ### Prerequistes
@@ -44,21 +44,16 @@ Certain range of inputs will cause the function `star_consumed` crashing due to 
         pass
 
 ## 4 IMPORTANT NOTES!
-If you use any of the code, even snippets, in this repository for academic researches or publishing scientific articles, please ***DO*** cite the following (BibTeX)
+If you use any of the code, even snippets, in this repository for academic researches or publishing scientific articles, please do cite the following (BibTeX)
 
-    @article{Chen:2018ohx,
-        author         = "Chen, Chian-Shu and Lin, Yen-Hsun",
-        title          = "{Reheating neutron stars with the annihilation of
-                            self-interacting dark matter}",
-        journal        = "JHEP",
-        volume         = "08",
-        year           = "2018",
-        pages          = "069",
-        doi            = "10.1007/JHEP08(2018)069",
-        eprint         = "1804.03409",
-        archivePrefix  = "arXiv",
-        primaryClass   = "hep-ph",
-        SLACcitation   = "%%CITATION = ARXIV:1804.03409;%%"
+    @article{lin2020analysis,
+        author = "Lin, Guey-Lin and Lin, Yen-Hsun",
+        archivePrefix = "arXiv",
+        eprint = "2004.05312",
+        month = "4",
+        primaryClass = "hep-ph",
+        title = "Analysis on the black hole formations inside old neutron stars by isospin-violating dark matter with self-interaction",
+        year = "2020"
     }
  
 as well as the address of this repository
