@@ -1,5 +1,5 @@
 ## 1 Introduction
-This repository contains a python package `dm2nsbh` for determining whether an old nearby neutron star could be destroyed by the dark-matter-forming black hole inside it or not. See jupyter notebook `tutorial.ipynb` or `tutorial.py` for quick usage. The method is based on G.L. Lin and Y.H. Lin [arXiv:2004.05312 [hep-ph]] (2020) and J. Bramante *et al.*, *Phys. Rev. D* **89**, 015010 (2014) [arXiv:1310.3509 [hep-ph]]
+This repository contains a python package `dm2nsbh` for determining whether an old nearby neutron star could be destroyed by the dark-matter-forming black hole inside it or not. See jupyter notebook `tutorial.ipynb` or `tutorial.py` for quick usage. The method is based on G.-L. Lin and Y.-H. Lin [arXiv:2004.05312 [hep-ph]] (2020) and J. Bramante *et al.*, *Phys. Rev. D* **89**, 015010 (2014) [arXiv:1310.3509 [hep-ph]]
 
 ## 2 Quick guide
 ### Prerequistes
@@ -52,7 +52,7 @@ Certain range of inputs will cause the function `star_consumed` crashing due to 
 ## 4 IMPORTANT NOTES!
 If you use any of the code, even snippets, in this repository for academic researches or publishing scientific articles, please do cite the following (BibTeX)
 
-    @article{lin2020analysis,
+    @article{Lin:2020zmm,
         author = "Lin, Guey-Lin and Lin, Yen-Hsun",
         archivePrefix = "arXiv",
         eprint = "2004.05312",
