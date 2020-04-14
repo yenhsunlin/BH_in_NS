@@ -52,7 +52,7 @@ If you use any of the code, even snippets, in this repository for academic resea
         eprint = "2004.05312",
         month = "4",
         primaryClass = "hep-ph",
-        title = "Analysis on the black hole formations inside old neutron stars by \n
+        title = "Analysis on the black hole formations inside old neutron stars by
                     isospin-violating dark matter with self-interaction",
         year = "2020"
     }
