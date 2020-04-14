@@ -43,10 +43,12 @@ If incompatible `numpy.int` or `numpy.float` happens during the calculations, tr
 
 ### `root_scalar` error
 Certain range of inputs will cause the function `star_consumed` crashing due to the values are unbound by certain root-finding method specified in the `root_scalar` function. Two way to solve this, one is to ignore the parameters that causes this problem via
+
     try:
         star_consumed(*inputs*)
     except ValueError:
         pass
+
 The other is to change the method. It is coded in `auxfuncs.py`. Searching the class named `CriticalNumber` and there are two functions with python dectorator. In the `dss` I pick up Newtonian method and bisect method in `nss`. Feel free to change the method, it could help you avoid the unbound problem when doing the calculation.
 
 To know the meaning of these methods I recommend *Algorithms for Optimization* by Kochenderfer and Wheeler, MIT Press, 2019 as well as scipy reference guide on the `root_scalar` page.
