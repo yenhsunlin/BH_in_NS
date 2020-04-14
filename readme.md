@@ -8,7 +8,7 @@ This repository contains a python package `dm2nsbh` for determining whether an o
 - `numpy`
 - `scipy`
 
-Missing any of them will result in error. We recommend Anaconda.
+Missing any of them will result in error. We recommend *Anaconda*.
 
 ### Tested enviroment
 
