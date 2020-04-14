@@ -8,7 +8,13 @@ This repository contains a python package `dm2nsbh` for determining whether an o
 - `numpy`
 - `scipy`
 
-Missing any of them will result in error.
+Missing any of them will result in error. We recommend Anaconda.
+
+### Tested enviroment
+
+- python 3.7.6
+- numpy 1.18.1
+- scipy 1.4.1
 
 ### Import the package
 The core files are contained in the folder named `dm2nsbh`, please put your jupyter notebook or python script together with `dm2nsbh` folder under the same path.
@@ -17,7 +23,7 @@ Using jupyter notebook for instance, typing the following in the work space:
 
     from dm2nsbh import *
 
-and the package should be loaded on-the-fly. If the package cannot be found, please add the following in the preamble
+and the package should be loaded on-the-fly. If the package cannot be found (not encountered usually), please add the following in the preamble
 
     import sys
     sys.path.append('./')
